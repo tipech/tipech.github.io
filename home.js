@@ -8,8 +8,7 @@ if ( $("body").width() > 580 ){
 	$('#bg').css({"display":"none"});
 
 	$.ajax({ 
-		url : 'index.php',
-		data : 'loader', 
+		url : 'res/nebula-bg-b64',
 		processData : false,
 	}).always(function(b64data){
 
