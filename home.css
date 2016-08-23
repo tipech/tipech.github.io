@@ -1,0 +1,280 @@
+@font-face {
+
+	font-family: 'Josefine'; 
+	src: url('https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ugdm0LZdjqr5-oayXSOefg.woff2') format("woff2"); 
+}
+@font-face {
+
+	font-family: 'Unica';
+	src: url('https://fonts.gstatic.com/s/unicaone/v4/z3VYemEbD7zsQFQLG6g3SltXRa8TVwTICgirnJhmVJw.woff2'); 
+}
+
+
+body{
+
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+
+	background-color: #123;
+
+	color: white;
+	font-family: 'Josefine', sans-serif;
+	text-shadow: 2px 0 0 #334, -2px 0 0 #334, 0 2px 0 #334, 0 -2px 0 #334, 1px 1px #334, -1px -1px 0 #334, 1px -1px 0 #334, -1px 1px 0 #334;
+	text-align: left;
+}
+
+a{
+
+	color: white;
+}
+
+
+h1{
+
+
+	font-size: 24pt;
+	font-family: 'Unica', sans-serif;
+	color: #bfe;
+	text-shadow: none;
+}
+
+h2{
+
+	font-family: 'Unica', sans-serif;
+	font-size: 20pt;
+}
+
+h3{
+
+	text-align: justify;
+	font-size: 14pt;
+}
+
+h4{
+
+	text-align: center;
+	font-size: 14pt;
+}
+
+#bg{
+
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -2;
+
+	background: #123 no-repeat fixed;
+	background-size: cover;
+}
+
+#bgCanvas{
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+	opacity: 0.5;
+}
+
+
+#sidebar_left{
+
+	display: table;
+	position: fixed;
+	left: 0;
+	width: 48px;
+	height: 100%;
+}
+
+#social{
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#social *{
+
+	margin: 4px;
+}
+
+
+#sidebar_right{
+
+	display: none;
+	position: fixed;
+	right: 0;
+	width: 32px;
+	height: 100%;
+}
+
+#markers {
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#markers a{
+
+	padding: 0 4px;
+	font-size: 24pt;
+	font-weight: bold;
+	color: #aac;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+#markers .active {
+
+	color: white;
+	text-shadow: 1px 1px 0 #779, -1px -1px 0 #779, 1px -1px 0 #779, -1px 1px 0 #779;
+}
+
+#main{
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#main>div{
+
+	display: table;
+	width: 100%;
+	height: 100%;
+
+}
+
+.centered{
+
+	display: table-cell;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px 40px 0px 20px;
+
+	vertical-align: middle;
+}
+
+
+#hello h1, #hello h2, #hello h3{
+
+	display: block;
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+
+
+#bio h2, #bio h3, #bio h4{
+
+	display: block;
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+#bio h4 a{
+	
+	margin: 0 10px;
+}
+
+#projects h3{
+
+	display: block;
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+#projectlist{
+
+	display: block;
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#projectlist>a{
+
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+
+	padding: 15px;
+	margin: 30px;
+	border: 1px solid white;
+	background: rgba(76, 80, 175, 0.3);
+	text-decoration: none;
+}
+
+#projectlist span{
+
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#projectlist span:first-child{
+
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width:580px){
+
+
+	h1{
+		font-size: 20pt;
+	}
+
+	h2{
+		font-size: 16pt;
+	}
+
+	h3{
+		font-size: 10pt;
+	}
+
+	h4{
+		font-size: 10pt;
+		text-align: center;
+	}
+
+	#bg{
+
+		background: #123 url("res/nebula-sm.png") no-repeat fixed;
+		background-position: center top;
+		background-size: cover;
+	}
+	
+	#sidebar_left{
+
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		background-color: #243;
+		border-top: 1px solid #eef;
+	}
+
+	#sidebar_right{
+
+		display: none;
+	}
+
+
+	#projectlist>a{
+
+		padding: 5px;
+		margin: 10px;
+	}
+
+}
