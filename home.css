@@ -165,6 +165,20 @@ h4{
 }
 
 
+#hello_container{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#profile{
+
+	margin-right: 40px;
+	width: 200px
+}
+
+
 #hello h1, #hello h2, #hello h3{
 
 	display: block;
@@ -193,7 +207,7 @@ h4{
 	margin: 10px auto;
 }
 
-#projectlist{
+.projectlist{
 
 	display: block;
 	max-width: 800px;
@@ -201,7 +215,7 @@ h4{
 	text-align: center;
 }
 
-#projectlist>a{
+.projectlist>a{
 
 	display: inline-block;
 	width: 100px;
@@ -214,13 +228,13 @@ h4{
 	text-decoration: none;
 }
 
-#projectlist span{
+.projectlist span{
 
 	display: inline-block;
 	margin-bottom: 5px;
 }
 
-#projectlist span:first-child{
+.projectlist span:first-child{
 
 	text-decoration: underline;
 	font-weight: bold;
@@ -254,6 +268,19 @@ h4{
 		background-position: center top;
 		background-size: cover;
 	}
+
+	#hello_container{
+
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+
+	#profile{
+
+		margin-right: 0;
+		margin-bottom: 40px;
+		width: 150px
+	}
 	
 	#sidebar_left{
 
@@ -271,7 +298,7 @@ h4{
 	}
 
 
-	#projectlist>a{
+	.projectlist>a{
 
 		padding: 5px;
 		margin: 10px;
