@@ -211,12 +211,13 @@ h4{
 
 	display: block;
 	max-width: 800px;
-	margin: 50px auto;
+	margin: 10px auto;
 	text-align: center;
 }
 
 .projectlist>a{
 
+	vertical-align: middle;
 	display: inline-block;
 	width: 200px;
 	height: 80px;
