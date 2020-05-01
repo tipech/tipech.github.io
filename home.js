@@ -8,7 +8,7 @@ if ( $("body").width() > 580 ){
 	$('#bg').css({"display":"none"});
 
 	$.ajax({ 
-		url : 'res/nebula-bg-b64',
+		url : 'res/circuit-b64.txt',
 		processData : false,
 	}).always(function(b64data){
 
